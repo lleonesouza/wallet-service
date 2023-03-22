@@ -3,7 +3,8 @@
 1. Put environments on ```.env``` using the ```.env.example``` as guide
 2. Generate ORM needed files ```go run github.com/prisma/prisma-client-go generate```
 3. Run the containers ```docker-compose up```
-4. Up Migrations ```go run github.com/prisma/prisma-client-go migrate dev```
+4. Add ```127.0.0.1 db```  to ```/etc/hosts``` file (step required to up migrations on ṕostgres container using container name)
+5. Up Migrations ```go run github.com/prisma/prisma-client-go migrate dev```
 
 
 ### Business Logic
